@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class BitManipulation {
     public static void oddOrEven(int n) {
@@ -188,5 +188,7 @@ public class BitManipulation {
         int i9 = sc.nextInt();
         System.out.println(fastExpo(n9, i9));
         System.out.println("--------------------------------------------------------");
+
+        sc.close();
     }
 }

@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class DataTypesJava {
     public static void main(String args[]) {
 
@@ -12,7 +10,7 @@ public class DataTypesJava {
 
         short x = 240;
         System.out.println(x);
-        
+
         boolean var = false;
         System.out.println(var);
 

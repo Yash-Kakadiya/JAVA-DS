@@ -1,10 +1,10 @@
-import java.util.*;
+public class Comment {
+    public static void main(String args[]) {
 
-public class Comment{
-    public static void main(String args[]){
-     
-         //singleline comment
-         /*multiline 
-            comment */
+        // singleline comment
+        /*
+         * multiline
+         * comment
+         */
     }
 }

@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class TernaryOperator{
     public static void main(String args[]){
@@ -9,5 +9,7 @@ public class TernaryOperator{
 
         String type=(num%2==0)?"Even":"Odd";
         System.out.println(type);
+
+        sc.close();
     }
 }

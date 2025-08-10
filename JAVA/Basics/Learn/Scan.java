@@ -1,34 +1,36 @@
 import java.util.*;
 
-public class Scan{
-    public static void main(String args[]){
+public class Scan {
+    public static void main(String args[]) {
 
-        Scanner sc= new Scanner(System.in);
- 
-     String input= sc.next();
-     System.out.println(input);
+        Scanner sc = new Scanner(System.in);
 
-     System.out.println("------------------------");
+        String input = sc.next();
+        System.out.println(input);
 
-     String name = sc.nextLine();
-     System.out.println(name);
+        System.out.println("------------------------");
 
-     int num=sc.nextInt();
-     System.out.println(num);
+        String name = sc.nextLine();
+        System.out.println(name);
 
-     float price=sc.nextFloat();
-     System.out.println(price);
+        int num = sc.nextInt();
+        System.out.println(num);
 
-     double d=sc.nextDouble();
-     System.out.println(d);
+        float price = sc.nextFloat();
+        System.out.println(price);
 
-     boolean b=sc.nextBoolean();
-     System.out.println(b);
+        double d = sc.nextDouble();
+        System.out.println(d);
 
-     short s=sc.nextShort();
-     System.out.println(s);
+        boolean b = sc.nextBoolean();
+        System.out.println(b);
 
-     long l=sc.nextLong();
-     System.out.println(l);
+        short s = sc.nextShort();
+        System.out.println(s);
+
+        long l = sc.nextLong();
+        System.out.println(l);
+
+        sc.close();
     }
 }

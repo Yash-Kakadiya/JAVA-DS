@@ -1,10 +1,10 @@
 import java.util.*;
 
-public class DaysSwitch{
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        switch(n){
+public class DaysSwitch {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt() % 7;
+        switch (n) {
             case 1:
                 System.out.println("Sunday");
                 break;
@@ -16,19 +16,20 @@ public class DaysSwitch{
                 break;
             case 4:
                 System.out.println("Wednesday");
-                break;    
+                break;
             case 5:
                 System.out.println("Thursday");
                 break;
             case 6:
                 System.out.println("Friday");
                 break;
-            case 7:
+            case 0:
                 System.out.println("Saturday");
                 break;
-            default :
+            default:
                 System.out.println("Invalid Input");
-                break;
         }
+
+        sc.close();
     }
 }
