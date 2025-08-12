@@ -1,3 +1,5 @@
+import java.util.Comparator;
+
 public class Arrays {
 
     public static void update(int marks[], int nonchangable) {
@@ -312,5 +314,10 @@ public class Arrays {
 
         System.out.println("--------------------------------------");
 
+    }
+
+    public static void sort(int[] nums, Comparator<Object> reverseOrder) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
     }
 }
