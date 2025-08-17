@@ -18,7 +18,6 @@ Constraints:
 • -10^5 <= nums [ i ] <= 10^5 */
 
 import java.util.*;
-
 public class Q03 {
 
     public static List<List<Integer>> threeSumBruteForce(int[] nums) {

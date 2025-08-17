@@ -1,5 +1,3 @@
-import java.util.Comparator;
-
 public class Arrays {
 
     public static void update(int marks[], int nonchangable) {
@@ -307,17 +305,14 @@ public class Arrays {
         // ---------------------------------------------------
 
         // Maximum Possible Subarray Sum (Kadane's Algorithm)(Optimised)
-        // int num[] = { -2, -3, -4, -1, -2, -1, -5, -3 };
-        // int num[] = { 2, 3, 4, 1, 2, 1, 5, 3 };
-        maxSubarraySumKadanes(nums);
+        // int[] num = { -2, -3, -4, -1, -2, -1, -5, -3 };
+        // int[] num = { 2, 3, 4, 1, 2, 1, 5, 3 };
+        int[] num = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        maxSubarraySumKadanes(num);
         minSubarraySumKadanes(nums);
 
         System.out.println("--------------------------------------");
 
     }
 
-    public static void sort(int[] nums, Comparator<Object> reverseOrder) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'sort'");
-    }
 }

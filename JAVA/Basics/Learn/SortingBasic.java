@@ -16,7 +16,7 @@ public class SortingBasic {
 
                 if (nums[j] > nums[j + 1]) {
                     // nums[j]>nums[j+1] for ascending order
-                    // nums[j]<nums[j+1] for decending order
+                    // nums[j]<nums[j+1] for descending order
 
                     // swap
                     int temp = nums[j];
@@ -39,7 +39,7 @@ public class SortingBasic {
             for (int j = i + 1; j < n; j++) {
                 if (nums[minPos] > nums[j]) {
                     // nums[minPos]>nums[j] for ascending order
-                    // nums[minPos]<nums[j] for decending order
+                    // nums[minPos]<nums[j] for descending order
                     minPos = j;
                 }
             }
@@ -88,7 +88,7 @@ public class SortingBasic {
         }
         // Initialize count array with all zeros
         int[] count = new int[max + 1];
-        for (int i = 0; i <= max; ++i) {
+        for (int i = 0; i <= max; i++) {
             count[i] = 0;
         }
 
