@@ -2,11 +2,14 @@ import java.util.Scanner;
 
 public class SearchInSortedMatrices {
 
-    public static boolean staircaseSearch(int matrix[][], int key) {
-        int row = 0;
-        int col = matrix[0].length - 1;
+    public static boolean staircaseSearch(int[][] matrix, int key) {
+        int n = matrix.length;
+        int m = matrix[0].length;
 
-        while (row < matrix.length && col >= 0) {
+        int row = 0;
+        int col = m - 1;
+
+        while (row < n && col >= 0) {
             if (matrix[row][col] == key) {
                 System.out.println(key + " Found at Index[" + row + "][" + col + "] of Matrix");
                 return true;
@@ -15,6 +18,26 @@ public class SearchInSortedMatrices {
             } else {
                 row++;
             }
+        }
+        System.out.println("Key Not Found");
+        return false;
+    }
+
+    public static boolean staircaseSearch2(int[][] matrix, int key) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+
+        int row = n - 1;
+        int col = 0;
+
+        while (row >= 0 && col < m) {
+            if (matrix[row][col] == key) {
+                System.out.println(key + " Found at Index[" + row + "][" + col + "] of Matrix");
+                return true;
+            } else if (key < matrix[row][col])
+                row--;
+            else
+                col++;
         }
         System.out.println("Key Not Found");
         return false;
@@ -34,7 +57,9 @@ public class SearchInSortedMatrices {
 
         int key = sc.nextInt();
 
+        // O(n+m)
         staircaseSearch(matrix, key);
+        staircaseSearch2(matrix, key);
 
         sc.close();
     }
