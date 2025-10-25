@@ -4,7 +4,7 @@
 
 public class FriendsPairingProblem {
     public static int friendsPairing(int n) {
-        if (n==1||n==2){
+        if (n == 1 || n == 2) {
             return n;
         }
 

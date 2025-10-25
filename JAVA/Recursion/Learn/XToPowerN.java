@@ -1,4 +1,4 @@
-public class XtoPowerN {
+public class XToPowerN {
 
     public static int power(int x, int n) { // long process | O(n) (TC)
         if (n == 0) {
@@ -27,7 +27,6 @@ public class XtoPowerN {
         int ans2 = fastPower(x, n);
 
         System.out.println(x + "^" + n + " = " + ans);
-        System.out.println("(using optimised power function) " + x + "^" + n + " = " + ans2);
+        System.out.println("Using optimised power function " + x + "^" + n + " = " + ans2);
     }
 }
-
