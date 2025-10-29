@@ -8,8 +8,8 @@
  */
 
 public class SearchInRotatedArray {
-    // Time Complexity: O(nlog n(recursive calls))
-    // Space Complexity: O(1)
+    // Time Complexity: O(log n)
+    // Space Complexity: O(1) for iterative, O(log n) for recursion due to call stack
     public static int searchRecursion(int[] nums, int target, int left, int right) {
         if (left > right) {
             return -1; // Base case: target not found

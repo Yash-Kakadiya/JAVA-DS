@@ -15,7 +15,7 @@ public class MergeSort {
     }
 
     // Time Complexity: O(n log n)
-    // Space Complexity: O(n)
+    // Space Complexity: O(n) for temporary array
     public static void mergeSort(int[] arr, int left, int right) {
         if (left >= right)
             return;
